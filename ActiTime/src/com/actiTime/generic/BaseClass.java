@@ -36,8 +36,9 @@ public class BaseClass {
 	}
 	
 	@AfterMethod
-	public void logout() {
+	public void logout() throws InterruptedException {
 		HomePage hm=new HomePage(driver);
+		Thread.sleep(3000);
 		hm.setLogout();
 	}
 

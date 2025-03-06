@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Praveen M Ghali\eclipse-workspace\ActiTime\testng.xml</span>
+                    <span>C:\Users\Praveen M Ghali\git\repository2\ActiTime\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -114,7 +114,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.actiTime.pom.UserListPage" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.actiTime.testScripts.UserModule" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -129,21 +129,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.actiTime.pom.UserListPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUser">
-                  </a> <!-- createUser -->
-                  <span class="method-name">createUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,10 +151,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.actiTime.testScripts.UserModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser">
+                  </a> <!-- createUser -->
+                  <span class="method-name">createUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Praveen M Ghali\eclipse-workspace\ActiTime\testng.xml</span>
+            <span class="header-content">C:\Users\Praveen M Ghali\git\repository2\ActiTime\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,8 +178,8 @@
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.actiTime.testScripts.UserModule&quot;/&gt;
       &lt;class name=&quot;com.actiTime.testScripts.TaskModule&quot;/&gt;
-      &lt;class name=&quot;com.actiTime.pom.UserListPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -222,21 +222,21 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createUser')
-data.setCell(0, 2, 'com.actiTime.pom.UserListPage')
-data.setCell(0, 3, 5411);
+data.setCell(0, 2, 'com.actiTime.testScripts.UserModule')
+data.setCell(0, 3, 4776);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createNewCust')
 data.setCell(1, 2, 'com.actiTime.testScripts.TaskModule')
-data.setCell(1, 3, 2940);
+data.setCell(1, 3, 2767);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createNewProject')
 data.setCell(2, 2, 'com.actiTime.testScripts.TaskModule')
-data.setCell(2, 3, 2760);
+data.setCell(2, 3, 2484);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -248,15 +248,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">createNewProject</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">KARNATAKA BANK project is created successfully</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">createNewCust</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">All Customers customer is created successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createUser</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">user created</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createNewProject</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">KARNATAKA BANK project is created successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,7 +273,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.actiTime.pom.UserListPage</span>
+              <span class="ignored-class-name">com.actiTime.testScripts.TaskModule</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">openBrowser</span>
                 <br/>
@@ -283,56 +289,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.actiTime.testScripts.TaskModule</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.actiTime.testScripts.UserModule</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">2506 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createNewCust</span>
-                <span class="method-start">3447 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logout</span>
-                <span class="method-start">6391 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">8828 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createNewProject</span>
-                <span class="method-start">9329 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logout</span>
-                <span class="method-start">12092 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.actiTime.pom.UserListPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">12359 ms</span>
+                <span class="method-start">2326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createUser</span>
-                <span class="method-start">12775 ms</span>
+                <span class="method-start">3197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">18188 ms</span>
+                <span class="method-start">7979 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actiTime.testScripts.TaskModule</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">11313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createNewCust</span>
+                <span class="method-start">11795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">14565 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">17845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createNewProject</span>
+                <span class="method-start">18313 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">20800 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.actiTime.testScripts.UserModule</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">18408 ms</span>
+                <span class="method-start">24105 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

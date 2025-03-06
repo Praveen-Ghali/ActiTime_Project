@@ -1,17 +1,11 @@
 package com.actiTime.pom;
 
-import java.io.IOException;
 
-import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.asserts.SoftAssert;
 
-import com.actiTime.generic.FileLib;
 
 public class TaskListPage {
 	//CREATE NEW CUSTOMER:
@@ -46,6 +40,7 @@ public class TaskListPage {
 	//CREATE NEW PROJECT:
 	@FindBy(xpath = "//div[@class='item createNewProject ellipsis']")
 	private WebElement newProjectOpt;
+	//input[@id='projectPopup_projectNameField']
 	
 	@FindBy(xpath = "//input[@id='projectPopup_projectNameField']")
 	private WebElement projectName;
@@ -137,48 +132,4 @@ public class TaskListPage {
 		return validateProjectName;
 	}
 	
-	
-	
-	/*public void getNewCustomer() throws EncryptedDocumentException, IOException, InterruptedException {
-		FileLib f=new FileLib();
-		taskTab.click();
-		addUserBtn.click();
-		newCustOpt.click();
-		String actualCustName = f.getCreateTaskExceldata("CreateCustomer", 1, 3);
-		custNameTbx.sendKeys(actualCustName);
-		String description = f.getCreateTaskExceldata("CreateCustomer", 1, 4);
-		descriptionTextArea.sendKeys(description);
-		activeCustDropdown.click();
-		ourCompanyOpt.click();
-		createCustBtn.click();
-		Thread.sleep(2000);
-		String expectedCustName = validateCustName.getText();
-		Reporter.log(expectedCustName+" customer is created successfully");
-		System.out.println(expectedCustName+" customer is created successfully");
-		SoftAssert s=new SoftAssert();
-		s.assertEquals(actualCustName, expectedCustName);
-		s.assertAll();
-		
-		
-	}
-	public void getNewProject() throws EncryptedDocumentException, IOException, InterruptedException {
-		FileLib f=new FileLib();
-		taskTab.click();
-		addUserBtn.click();
-		newProjectOpt.click();
-		String actualProjectName = f.getCreateTaskExceldata("CreateProject", 1, 0);
-		projectName.sendKeys(actualProjectName);
-		selectCustDD.click();
-		custName.click();
-		String description = f.getCreateTaskExceldata("CreateProject", 1, 1);
-		textArea.sendKeys(description);
-		createProjectBtn.click();
-		Thread.sleep(3000);
-		String expectedProNmae = validateProjectName.getText();
-		Reporter.log(expectedProNmae+" project is created successfully");
-		System.out.println(actualProjectName+" project is created successfully");
-		SoftAssert s=new SoftAssert();
-		s.assertEquals(actualProjectName, actualProjectName);
-		s.assertAll();
-	}*/
 }

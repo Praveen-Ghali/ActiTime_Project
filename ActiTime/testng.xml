@@ -2,8 +2,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.actiTime.testScripts.UserModule"/>
       <class name="com.actiTime.testScripts.TaskModule"/>
-      <class name="com.actiTime.pom.UserListPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
